@@ -1,0 +1,357 @@
+/* DO NOT REMOVE GOOGLE FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Barlow:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+p{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    color: hsl(213, 9%, 39%); 
+    font-size: 1.5em; 
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+    background: url("./images/desktop/image-header.jpg") no-repeat center center;
+    background-size: cover;
+    text-align: center;
+}
+
+.main-nav>#logo{
+    width: 8em;
+    height: 3em;
+    margin: 1em 0 0 1em;
+}
+
+.main-nav{
+    display: flex;
+    flex-direction: row;
+    width:100vw;
+    align-items: center;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100vw;
+    align-items: center;
+    gap: 3em;
+    padding-right: 4em;
+    list-style: none;
+}
+
+.items{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+
+.header>.open_title{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 7em;
+    padding-top: 3rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.header>.arrow{
+    width: 45px;
+    height: 200px;
+    margin: 2.5rem auto;
+}
+
+/* main sections */
+
+.info_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 700px);
+    justify-content: center;
+}
+.left_side_brand, .right_side_standOut{
+    background-color: hsl(0, 0%, 100%);
+    padding: 5em;
+    align-self: center;
+}
+.titles{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    color:hsl(212, 27%, 19%);
+}
+.learnMore{
+    margin-top: 1.5em;
+}
+a.HYPLink{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 1.8em;
+    color:hsl(212, 27%, 19%);
+    text-decoration-color: hsl(51, 100%, 49%);
+    text-decoration-thickness: 5px;
+    margin-top: 2em;
+}
+a.HYPLink2{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 1.8em;
+    color:hsl(212, 27%, 19%);
+    text-decoration-color: hsl(7, 99%, 70%);
+    text-decoration-thickness: 5px;
+    margin-top: 2em;
+}
+.right_side_egg{
+    background: url("./images/desktop/image-transform.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left_side_pink{
+    background: url("./images/desktop/image-stand-out.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left_cherry{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5em;
+    text-align: center;
+    background: url("./images/desktop/image-graphic-design.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.right_orange{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 6em;
+    text-align: center;
+    background: url("./images/desktop/image-photography.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* testimonials */
+.test_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+}
+
+.test-title{
+    grid-column: 1/4;
+    justify-self: center;
+    align-self: center;
+}
+
+#test-h3{
+    color:hsl(210, 4%, 67%);
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.client-1,
+.client-2,
+.client-3{
+    display: grid;
+    place-items: center;
+    align-self: center;
+    justify-self: center;
+}
+.test_img{
+    border-radius: 50%;
+    margin: auto;
+}
+.deets{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding: 4em;
+}
+
+.name{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 1.3em;
+    color:hsl(212, 27%, 19%);
+}
+
+.career_title{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    color:hsl(210, 4%, 67%);
+    margin-bottom: 1.5em;
+}
+
+
+
+/* image container */
+.image_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 600px;
+    place-items: center;
+    overflow: hidden;
+}
+
+.img_column_1,
+.img_column_2,
+.img_column_3{
+display: grid;
+place-items: center;
+}
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    background-color: hsl(167, 40%, 24%);
+    align-items: center;
+    justify-content: center;
+}
+
+.FL_container{
+    margin-top: 1em;
+}
+#foot_logo{
+    width: 220px;
+    height: 50px;
+}
+#sub-nav{
+    width: 100%;
+height: 400px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+.sub-nav-items{
+    display: flex;
+    flex-direction: row;
+}
+.sub-items{
+    list-style: none;
+    padding: 2em;
+    color: hsl(168, 34%, 41%);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+}
+
+.icons{
+    padding: 1em;
+    transition: rotate 1s ease-in-out;
+}
+.icons:first-child:hover{
+    rotate: z 90deg;
+    cursor: pointer;
+  }
+  
+  .icons:nth-child(2):hover{
+    rotate: z 90deg;
+    cursor: pointer;
+  }
+
+  .icons:nth-child(3):hover{
+    rotate: z 90deg;
+    cursor: pointer;
+  }
+
+  .icons:last-child:hover{
+    rotate: z 90deg;
+    cursor: pointer;
+  }
+.attribution{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+}
+
+
+
+/* media query */
+@media only screen and (max-width: 600px) 
+{
+    .nav-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+        align-items: center;
+        padding-right: 4em;
+        gap: 2rem;
+        list-style: none;
+        overflow: hidden;
+    }
+    .header{
+        overflow: hidden;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    .info_container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .left_side_brand, .right_side_standOut{
+        overflow: hidden;
+    }
+    .right_side_egg{
+        overflow: hidden;
+    }
+    .left_side_pink{
+        overflow: hidden;
+    }
+    .left-cherry{
+        overflow: hidden;
+        padding: 2rem;
+    }
+.right_orange{
+    overflow: hidden;
+    padding: 2rem;
+}
+    .titles{
+        margin-top: 9rem;
+        font-size: 2rem;
+    }
+
+    .test_container{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    #test-h3{
+        margin: 2rem 0 2rem 0;
+    }
+    .deets{
+        padding: 2rem;
+    }
+    .image_container{
+        display: none;
+    }
+}
